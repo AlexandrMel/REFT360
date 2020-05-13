@@ -4,14 +4,14 @@
       "date": "2047-05-17",
       "groups": [
         {
-          "time": "8:00 am",
+          "time": "Alexandr Miller",
           "sessions": [
             {
-              "name": "Breakfast",
-              "timeStart": "8:00 am",
-              "timeEnd": "9:00 am",
-              "location": "Dining Hall",
-              "tracks": ["Food"],
+              "name": "Meeting",
+              "timeStart": "Topic",
+              "timeEnd": "Budget Cuts",
+              "location": "05.05.2020",
+              "tracks": ["Feedback, feedback, feedback,  feedback, feedback, feedback, Feedback, feedback, feedback,  feedback, feedback, feedback,"],
               "id": "1"
             }
           ]

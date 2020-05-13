@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "ionic-react-conference-app",
+  "appId": "io.ionic.reft360",
+  "appName": "reft360 app",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",

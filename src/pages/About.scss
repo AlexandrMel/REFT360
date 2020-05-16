@@ -120,10 +120,10 @@ height: 100%;
   color: grey;
 }
 .profile-divider {
-  border-bottom: 1px solid black;
-  height: 120px;
+  // border-bottom: 1px solid black;
+  font-size: 20px;
+  height: 40px;
   margin: 0 auto;
-  margin-bottom: 20px;
   width: 80%;
   display: flex;
   justify-content: center;
@@ -132,4 +132,10 @@ height: 100%;
 }
 .center-title {
   width: 300px;
+}
+.but {
+  height: 110px;
+  width: 110px;
+  margin:  auto;
+  margin-bottom: 10px;
 }

@@ -23,13 +23,23 @@ import {
   IonCol,
   IonTitle,
 } from "@ionic/react";
-import "./About.scss";
-import { ellipsisHorizontal, ellipsisVertical } from "ionicons/icons";
+import "./RequestFeedback.scss";
+import {
+  ellipsisHorizontal,
+  ellipsisVertical,
+  helpOutline,
+  starHalfOutline,
+  personAddOutline,
+  personRemoveOutline,
+  thumbsUpOutline,
+  thumbsDownOutline,
+  earOutline,
+} from "ionicons/icons";
 import AboutPopover from "../components/AboutPopover";
 
 interface AboutProps {}
 
-const About: React.FC<AboutProps> = () => {
+const RequestFeedback: React.FC<AboutProps> = () => {
   const [showPopover, setShowPopover] = useState(false);
   const [popoverEvent, setPopoverEvent] = useState();
   const [location, setLocation] = useState<
@@ -103,54 +113,57 @@ const About: React.FC<AboutProps> = () => {
         <IonGrid>
           <IonRow>
             <IonCol>
-              <div className="big-circle-pic">
-                <div className="smaller-circle-pic">
-                  <img src="https://img.icons8.com/bubbles/100/000000/about-me-female.png" />
+              <div className="big-circle-pic-req">
+                <IonButton
+                  className="advice_btn"
+                  shape="round"
+                  expand="block"
+                  color="secondary"
+                  fill="outline"
+                >
+                  <IonGrid>
+                    <IonRow>
+                      <IonCol>
+                        <IonIcon icon={earOutline}></IonIcon>
+                      </IonCol>
+                    </IonRow>
+                    <IonRow>
+                      <IonCol>
+                        <p>Advice</p>
+                      </IonCol>
+                    </IonRow>
+                  </IonGrid>
+                </IonButton>
+                <IonButton
+                  className="rating_btn"
+                  shape="round"
+                  expand="block"
+                  color="secondary"
+                  fill="outline"
+                >
+                  <IonIcon icon={starHalfOutline}></IonIcon>
+                </IonButton>
+                <IonButton
+                  className="plus_minus_btn"
+                  shape="round"
+                  expand="block"
+                  color="secondary"
+                  fill="outline"
+                >
+                  <IonIcon icon={thumbsUpOutline}></IonIcon>
+                  <IonIcon icon={thumbsDownOutline}></IonIcon>
+                </IonButton>
+                <div>
+                  <IonButton
+                    className="but"
+                    shape="round"
+                    color="secondary"
+                    expand="block"
+                  >
+                    <h5>REQUEST</h5>
+                  </IonButton>
                 </div>
               </div>
-            </IonCol>
-          </IonRow>
-          <IonRow>
-            <IonCol className="ion-text-center">
-              <h1 className="profile-name">Rebecca Miller</h1>
-            </IonCol>
-          </IonRow>
-          <IonRow>
-            <IonCol className="ion-text-center">
-              <p className="profile-position">CEO</p>
-            </IonCol>
-          </IonRow>
-          <IonRow>
-            <IonCol>
-              <div className="profile-divider">
-                <p>Feedback</p>
-              </div>
-            </IonCol>
-          </IonRow>
-          <IonRow className=" ion-text-center">
-            <IonCol>
-              <IonButton
-                className="but"
-                shape="round"
-                expand="block"
-                color="secondary"
-                fill="outline"
-              >
-               <img src="https://img.icons8.com/ios/50/000000/drag-list-up.png"/>
-              </IonButton>
-              <IonLabel>Give Feedback</IonLabel>
-            </IonCol>
-            <IonCol>
-              <IonButton
-                className="but"
-                shape="round"
-                color="secondary"
-                expand="block"
-                href="/tabs/requestFeed"
-              >
-                <img src="https://img.icons8.com/ios/50/000000/drag-list-down.png"/>
-              </IonButton>
-              <IonLabel>Request</IonLabel>
             </IonCol>
           </IonRow>
         </IonGrid>
@@ -166,4 +179,4 @@ const About: React.FC<AboutProps> = () => {
   );
 };
 
-export default React.memo(About);
+export default React.memo(RequestFeedback);
